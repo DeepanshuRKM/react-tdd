@@ -28,7 +28,7 @@ class App extends Component {
                                 <label>Email:</label>
                             </td>
                             <td align="left">
-                                <input id="emailId" className="emailCls" type="email" name="email" />
+                                <input id="emailId" className="emailCls" type="email" name="email" required />
                             </td>
                             <td>
                                 {this.state.emailErrorMessage ? <span>
@@ -41,7 +41,7 @@ class App extends Component {
                                 <label>Phone:</label>
                             </td>
                             <td align="left">
-                                <input id="phoneId" className="phoneCls" type="text" name="phone" />
+                                <input id="phoneId" className="phoneCls" type="text" name="phone" required />
                             </td>
                             <td>
                                 {this.state.phoneErrorMessage ? <span>
@@ -54,7 +54,7 @@ class App extends Component {
                                 <label>Date Of Birth:</label>
                             </td>
                             <td align="left">
-                                <input id="dobId" className="dobCls"  type="date" name="dob" />
+                                <input id="dobId" className="dobCls"  type="date" name="dob" required />
                             </td>
                             <td>
                                 {this.state.dobErrorMessage ? <span>
@@ -64,7 +64,7 @@ class App extends Component {
                         </tr>
                         <tr>
                             <td colSpan="2" align="center">
-                                <input type="submit" value="Submit" />
+                                <input type="submit" name="submit" value="Submit" />
                             </td>
                         </tr>
                     </table>
